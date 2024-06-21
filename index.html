@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulir Belanja</h1>
+        <img src="mall.jpg" alt="">
+    </header>
+    <main>
+        <form id="shoppingForm">
+            <label for="productName">Nama Produk:</label>
+            <input type="text" id="productName" name="productName" required>
+            <br>
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <br>
+            <label>Kategori:</label>
+            <input type="radio" id="electronics" name="category" value="Elektronik" required>
+            <label for="electronics">Elektronik</label>
+            <input type="radio" id="clothing" name="category" value="Pakaian" required>
+            <label for="clothing">Pakaian</label>
+            <input type="radio" id="groceries" name="category" value="Sembako" required>
+            <label for="groceries">Sembako</label>
+            <br>
+            <label for="price">Harga (Rp):</label>
+            <input type="number" id="price" name="price" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                    <th>Harga (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
